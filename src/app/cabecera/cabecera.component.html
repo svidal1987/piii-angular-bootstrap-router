@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" height="52px">
   
   <a class="navbar-brand" href="#">
@@ -20,5 +20,36 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+  </div>
+</nav>-->
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="container-fluid px-0">
+    <div class="row w-100">
+      <div class="col-2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" (click)="isShown = !isShown" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="col-10">
+        <div class="collapse justify-content-end navbar-collapse" [ngClass]="{ 'show': isShown }" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" (click)="isShown = false" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="isShown = false" >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="isShown = false" >Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="isShown = false" >Book Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>

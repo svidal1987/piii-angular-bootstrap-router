@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent implements OnInit {
-
+isShown:boolean=false;
   constructor() { }
 
   ngOnInit() {
